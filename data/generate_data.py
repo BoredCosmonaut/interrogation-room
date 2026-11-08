@@ -1,0 +1,207 @@
+"""
+generate_data.py
+Builds a synthetic dataset of "knowledge contradiction" pairs for the
+Interrogation Room contradiction detector.
+
+Each example is a pair of statements from the same suspect:
+    statement_a: an earlier claim (usually a denial)
+    statement_b: a later claim
+    label:       1 = contradiction, 0 = no contradiction
+
+Output: data/train.jsonl, data/val.jsonl, data/test.jsonl
+"""
+
+import json
+import os
+import random
+
+random.seed(42)
+
+# ---------------------------------------------------------------------------
+# Fillers. Each split gets its OWN names/places/objects, so the test set
+# checks whether the model learned the pattern, not memorized the words.
+# ---------------------------------------------------------------------------
+
+FILLERS = {
+    "train": {
+        "person": ["Alex", "Sarah", "Michael", "Emma", "David", "Olivia", "James",
+                   "Sophia", "Daniel", "Grace", "Ryan", "Chloe", "Nathan", "Lucy"],
+        "place": ["the warehouse", "the parking lot", "the loading dock", "the bar",
+                  "the train station", "the old factory", "the gas station",
+                  "the back alley", "the harbor", "the motel"],
+        "object": ["the red van", "the briefcase", "the black jacket", "the phone",
+                   "the toolbox", "the envelope", "the keys", "the laptop"],
+    },
+    "val": {
+        "person": ["Thomas", "Hannah", "Lucas", "Mia", "Ethan"],
+        "place": ["the pier", "the garage", "the diner", "the bridge"],
+        "object": ["the backpack", "the white truck", "the wallet", "the camera"],
+    },
+    "test": {
+        "person": ["Victor", "Julia", "Oscar", "Nora", "Felix"],
+        "place": ["the casino", "the rooftop", "the storage unit", "the bus depot"],
+        "object": ["the suitcase", "the green sedan", "the receipt", "the radio"],
+    },
+}
+
+# ---------------------------------------------------------------------------
+# Templates, grouped by what the suspect denies.
+#   denials:  "I don't know X"
+#   reveals:  statements that only make sense if you DO know X  -> label 1
+#   safe:     statements that mention X but are still consistent  -> label 0
+# ---------------------------------------------------------------------------
+
+TEMPLATES = {
+    "person": {
+        "denials": [
+            "I've never heard of {x}.",
+            "I don't know anyone named {x}.",
+            "I have no idea who {x} is.",
+            "I've never met {x} in my life.",
+            "That name, {x}, means nothing to me.",
+        ],
+        "reveals": [
+            "{x} wouldn't do something like that.",
+            "{x} lives far from here.",
+            "{x} always drinks too much on weekends.",
+            "I lent {x} some money last year.",
+            "{x} and I used to play cards together.",
+            "{x} has a bad temper, everyone knows that.",
+            "{x} called me last night.",
+            "I saw {x} at the bar on Friday.",
+        ],
+        "safe": [
+            "Who is {x}?",
+            "Why do you keep asking me about {x}?",
+            "You mentioned {x} earlier, but I still don't know them.",
+            "Someone named {x} was in the news, I think.",
+            "If {x} said something about me, they're lying.",
+            "I've never spoken to {x}.",
+        ],
+    },
+    "place": {
+        "denials": [
+            "I wasn't anywhere near {x} that night.",
+            "I've never been to {x}.",
+            "I don't even know where {x} is.",
+            "I didn't go to {x}.",
+        ],
+        "reveals": [
+            "The lights at {x} were off when I got there.",
+            "It was freezing at {x} that night.",
+            "I parked right in front of {x}.",
+            "The back door of {x} was unlocked.",
+            "I only stayed at {x} for ten minutes.",
+            "There was nobody else at {x} when I arrived.",
+        ],
+        "safe": [
+            "Where exactly is {x}?",
+            "I've heard {x} is a rough area.",
+            "I was home all night, not at {x}.",
+            "Why would I go to {x}?",
+            "Plenty of people go to {x}, it doesn't mean anything.",
+        ],
+    },
+    "object": {
+        "denials": [
+            "I never saw {x}.",
+            "I don't know anything about {x}.",
+            "I've never touched {x}.",
+            "{x}? I have no idea what you're talking about.",
+        ],
+        "reveals": [
+            "{x} was already scratched when I found it.",
+            "I put {x} back where it was.",
+            "{x} was heavier than it looked.",
+            "I only held {x} for a second.",
+            "Someone else must have moved {x} after I left it.",
+        ],
+        "safe": [
+            "What's so important about {x}?",
+            "You'll have to show me {x}, I've never seen it.",
+            "If my fingerprints are on {x}, someone planted them.",
+            "Is {x} even connected to this case?",
+        ],
+    },
+}
+
+
+def make_pairs(split_name):
+    """Build all examples for one split."""
+    fillers = FILLERS[split_name]
+    examples = []
+
+    for kind, templates in TEMPLATES.items():
+        values = fillers[kind]
+
+        for x in values:
+            for denial in templates["denials"]:
+                a = denial.format(x=x)
+
+                # 1) Denial vs reveal about the SAME thing -> contradiction
+                for reveal in templates["reveals"]:
+                    examples.append(make_example(a, reveal.format(x=x), 1, kind, "reveal"))
+
+                # 2) Denial vs safe statement about the same thing -> no contradiction
+                for safe in templates["safe"]:
+                    examples.append(make_example(a, safe.format(x=x), 0, kind, "safe"))
+
+                # 3) Denial vs reveal about a DIFFERENT thing -> no contradiction.
+                #    Stops the model from learning "reveal sentence = contradiction".
+                other = random.choice([v for v in values if v != x])
+                reveal = random.choice(templates["reveals"])
+                examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
+
+                # 4) Denial vs another denial of the same thing -> no contradiction
+                other_denial = random.choice([d for d in templates["denials"] if d != denial])
+                examples.append(make_example(a, other_denial.format(x=x), 0, kind, "consistent"))
+
+    return examples
+
+
+def make_example(a, b, label, kind, pair_type):
+    # Capitalize the first letter (object templates start with "the ...")
+    a = a[0].upper() + a[1:]
+    b = b[0].upper() + b[1:]
+    return {
+        "statement_a": a,
+        "statement_b": b,
+        "label": label,
+        "kind": kind,            # person / place / object
+        "pair_type": pair_type,  # reveal / safe / other_entity / consistent
+    }
+
+
+def balance(examples):
+    """Downsample so contradictions and non-contradictions are 50/50."""
+    pos = [e for e in examples if e["label"] == 1]
+    neg = [e for e in examples if e["label"] == 0]
+    n = min(len(pos), len(neg))
+    out = random.sample(pos, n) + random.sample(neg, n)
+    random.shuffle(out)
+    return out
+
+
+def save_jsonl(examples, path):
+    with open(path, "w", encoding="utf-8") as f:
+        for e in examples:
+            f.write(json.dumps(e, ensure_ascii=False) + "\n")
+
+
+def main():
+    os.makedirs("data", exist_ok=True)
+
+    for split in ["train", "val", "test"]:
+        examples = balance(make_pairs(split))
+        save_jsonl(examples, f"data/{split}.jsonl")
+
+        n_pos = sum(e["label"] for e in examples)
+        print(f"{split:5s}: {len(examples):5d} examples ({n_pos} contradictions)")
+
+    print("\nSample:")
+    for e in random.sample(examples, 5):
+        print(f"  [{e['label']}] {e['statement_a']}  ->  {e['statement_b']}   ({e['pair_type']})")
+
+
+if __name__ == "__main__":
+    main()

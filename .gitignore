@@ -1,0 +1,6 @@
+data/*.jsonl
+__pycache__/
+.venv/
+*.pt
+*.safetensors
+checkpoints/

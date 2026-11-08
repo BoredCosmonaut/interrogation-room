@@ -1,0 +1,752 @@
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "I've never touched the wallet.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "What's so important about the backpack?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "If Thomas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "Is the white truck even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Why do you keep asking me about Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Mia wouldn't do something like that.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "There was nobody else at the pier when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Thomas lives far from here.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "Why would I go to the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "I was home all night, not at the diner.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "I lent Hannah some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Why do you keep asking me about Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "The backpack was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "The wallet was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Who is Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the camera.", "statement_b": "I only held the camera for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Thomas and I used to play cards together.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Who is Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "If Hannah said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "The back door of the garage was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "Plenty of people go to the diner, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "The back door of the pier was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "Where exactly is the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Someone named Lucas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "I've never spoken to Mia.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "There was nobody else at the garage when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "I was home all night, not at the pier.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "I've never spoken to Thomas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "I have no idea who Ethan is.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "The wallet was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "I've never spoken to Hannah.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "I've never touched the wallet.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "I've never spoken to Hannah.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "You'll have to show me the backpack, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "I only held the wallet for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Why do you keep asking me about Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "What's so important about the white truck?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "Why would I go to the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "The wallet? I have no idea what you're talking about.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "The wallet was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "I lent Mia some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Why do you keep asking me about Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "I lent Mia some money last year.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "The back door of the bridge was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "What's so important about the white truck?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Hannah and I used to play cards together.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "I saw Mia at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "I only held the wallet for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I parked right in front of the garage.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "I parked right in front of the pier.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "I was home all night, not at the garage.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "Where exactly is the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "I parked right in front of the bridge.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Who is Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "I lent Mia some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "I have no idea who Thomas is.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "If Hannah said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "If my fingerprints are on the camera, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "If my fingerprints are on the backpack, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "You mentioned Ethan earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "The lights at the pier were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "I saw Mia at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "Why would I go to the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the camera.", "statement_b": "The camera was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I was home all night, not at the pier.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "Someone else must have moved the camera after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "Is the wallet even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "I only held the camera for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "Someone else must have moved the camera after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the backpack.", "statement_b": "I only held the white truck for a second.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "The lights at the garage were off when I got there.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "Where exactly is the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "I don't know anyone named Lucas.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "I lent Ethan some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "I've never spoken to Mia.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Who is Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "The back door of the bridge was unlocked.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "I lent Thomas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Someone named Ethan was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I never saw the camera.", "statement_b": "I put the camera back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "The white truck was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "I've never been to the garage.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "I've never touched the camera.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "I saw Hannah at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "I've never touched the wallet.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I never saw the wallet.", "statement_b": "I put the wallet back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "There was nobody else at the garage when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "Someone else must have moved the backpack after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Why do you keep asking me about Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Why do you keep asking me about Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "What's so important about the wallet?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "I never saw the backpack.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "You'll have to show me the white truck, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "You mentioned Hannah earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "If my fingerprints are on the backpack, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "Where exactly is the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "The wallet was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "There was nobody else at the bridge when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "There was nobody else at the garage when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I only stayed at the bridge for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "It was freezing at the bridge that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Why do you keep asking me about Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "If Thomas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "I have no idea who Ethan is.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "If Thomas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "The back door of the diner was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "What's so important about the wallet?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "I only held the white truck for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "I put the wallet back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "I put the backpack back where it was.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I never saw the camera.", "statement_b": "You'll have to show me the camera, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "The back door of the diner was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "I've never spoken to Thomas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Who is Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "I put the backpack back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "You mentioned Hannah earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "Plenty of people go to the diner, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "I wasn't anywhere near the diner that night.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "Why would I go to the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "There was nobody else at the pier when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Why do you keep asking me about Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "I lent Lucas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "If Thomas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the camera.", "statement_b": "The camera? I have no idea what you're talking about.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "Is the wallet even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "You mentioned Ethan earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "You mentioned Lucas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "The camera was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "I put the camera back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "I only held the wallet for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Thomas called me last night.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "You'll have to show me the wallet, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "I never saw the white truck.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "If Ethan said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "Why would I go to the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the camera.", "statement_b": "I put the camera back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "You mentioned Lucas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "I have no idea who Lucas is.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "That name, Thomas, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "I was home all night, not at the garage.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Who is Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "Plenty of people go to the garage, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "Plenty of people go to the bridge, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I never saw the white truck.", "statement_b": "I only held the camera for a second.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "I lent Lucas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "I only held the camera for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "If Hannah said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "I only held the backpack for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Someone named Lucas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "Where exactly is the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "I saw Mia at the bar on Friday.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "I lent Thomas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "There was nobody else at the pier when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "Plenty of people go to the garage, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "You'll have to show me the wallet, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "I only stayed at the pier for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "The lights at the pier were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "You'll have to show me the wallet, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "There was nobody else at the diner when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "Is the white truck even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "If Lucas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "I put the backpack back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "Someone else must have moved the wallet after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Why do you keep asking me about Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "It was freezing at the pier that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "The backpack was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "The back door of the bridge was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the camera.", "statement_b": "The camera was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "I only held the backpack for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "If my fingerprints are on the wallet, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "Is the camera even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "It was freezing at the bridge that night.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the garage.", "statement_b": "Where exactly is the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Hannah lives far from here.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "It was freezing at the bridge that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "I lent Thomas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "Plenty of people go to the bridge, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I've heard the bridge is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "I've heard the garage is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "The white truck was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "I've never spoken to Hannah.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "I've never spoken to Mia.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "That name, Hannah, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "If my fingerprints are on the backpack, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never been to the garage.", "statement_b": "The back door of the pier was unlocked.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "What's so important about the camera?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I didn't go to the bridge.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Who is Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "Where exactly is the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Someone named Hannah was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "The lights at the garage were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "I have no idea who Mia is.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "Plenty of people go to the diner, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "The lights at the garage were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "Where exactly is the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Who is Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "If Mia said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "I never saw the white truck.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "Where exactly is the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I never saw the backpack.", "statement_b": "Is the backpack even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "Plenty of people go to the pier, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "You mentioned Thomas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Mia and I used to play cards together.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Someone named Hannah was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "I saw Hannah at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "I don't know anyone named Lucas.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "Plenty of people go to the pier, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the camera.", "statement_b": "What's so important about the camera?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "The wallet was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "If Ethan said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I never saw the camera.", "statement_b": "The camera was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "I lent Hannah some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "I don't even know where the garage is.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "I don't know anyone named Lucas.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "You mentioned Lucas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "The wallet was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "It was freezing at the diner that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Ethan wouldn't do something like that.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "Why would I go to the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Why do you keep asking me about Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I never saw the backpack.", "statement_b": "You'll have to show me the backpack, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "The backpack was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "It was freezing at the diner that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Why do you keep asking me about Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never been to the diner.", "statement_b": "Why would I go to the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "What's so important about the backpack?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I never saw the white truck.", "statement_b": "If my fingerprints are on the white truck, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "I lent Lucas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "I put the white truck back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "I put the white truck back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "I don't even know where the diner is.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "I only held the white truck for a second.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "There was nobody else at the bridge when I arrived.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "I've never spoken to Ethan.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "I've never spoken to Lucas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "Is the camera even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "I saw Mia at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "I parked right in front of the diner.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "Where exactly is the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Someone named Lucas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "You mentioned Ethan earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I only stayed at the pier for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the pier.", "statement_b": "The back door of the pier was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "It was freezing at the garage that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "I lent Ethan some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Why do you keep asking me about Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "You mentioned Thomas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Why do you keep asking me about Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "The white truck was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "That name, Mia, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "There was nobody else at the garage when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Someone named Thomas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "I never saw the white truck.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "You mentioned Ethan earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the pier.", "statement_b": "The back door of the bridge was unlocked.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I've never touched the camera.", "statement_b": "Someone else must have moved the camera after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "I've never spoken to Mia.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "The lights at the pier were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "It was freezing at the diner that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Why do you keep asking me about Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "I only held the white truck for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "Plenty of people go to the pier, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "What's so important about the camera?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "The back door of the pier was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "I lent Ethan some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "I don't know anything about the white truck.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "If my fingerprints are on the camera, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "Why would I go to the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I never saw the backpack.", "statement_b": "I only held the backpack for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "You mentioned Thomas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "If my fingerprints are on the white truck, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "I've never spoken to Ethan.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "The backpack was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "I only held the white truck for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "It was freezing at the garage that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "The back door of the bridge was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the camera.", "statement_b": "You'll have to show me the camera, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Who is Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I never saw the camera.", "statement_b": "What's so important about the camera?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "Is the backpack even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "The lights at the pier were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Who is Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "You'll have to show me the backpack, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "Someone else must have moved the camera after I left it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "I wasn't anywhere near the garage that night.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "I only stayed at the diner for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Someone named Mia was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Lucas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "I lent Lucas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "I parked right in front of the garage.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "If my fingerprints are on the wallet, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "The back door of the pier was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "Someone else must have moved the wallet after I left it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "I saw Hannah at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "Why would I go to the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "The camera was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "The camera was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "The wallet was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I only stayed at the bridge for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Who is Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "I parked right in front of the garage.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "Plenty of people go to the diner, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "I've heard the pier is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "If my fingerprints are on the wallet, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "You mentioned Mia earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "There was nobody else at the diner when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "It was freezing at the pier that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Why do you keep asking me about Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Someone named Mia was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "Where exactly is the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never been to the garage.", "statement_b": "I've heard the garage is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "I lent Thomas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "Plenty of people go to the garage, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "I put the wallet back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "I put the wallet back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Someone named Ethan was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Thomas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "I lent Mia some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "That name, Ethan, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "I put the white truck back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "I don't even know where the garage is.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I've heard the pier is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Who is Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "You mentioned Thomas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "The lights at the bridge were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "The backpack was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Someone named Thomas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "That name, Mia, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Who is Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "I lent Mia some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "I've never spoken to Hannah.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "I was home all night, not at the diner.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the wallet.", "statement_b": "If my fingerprints are on the wallet, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "You'll have to show me the camera, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "I didn't go to the pier.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Why do you keep asking me about Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "The back door of the garage was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "I've never spoken to Ethan.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "If Hannah said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "You mentioned Mia earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the backpack.", "statement_b": "Someone else must have moved the backpack after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "If Lucas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "I lent Lucas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the pier.", "statement_b": "I was home all night, not at the pier.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "I parked right in front of the garage.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Someone named Ethan was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "If Ethan said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "If Ethan said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never been to the pier.", "statement_b": "I've heard the pier is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the camera.", "statement_b": "I've never touched the camera.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "I've heard the garage is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "The lights at the diner were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "You'll have to show me the white truck, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I never saw the backpack.", "statement_b": "The backpack? I have no idea what you're talking about.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "That name, Hannah, means nothing to me.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "I saw Hannah at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "It was freezing at the diner that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "If Mia said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "I only held the camera for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "The white truck was heavier than it looked.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "There was nobody else at the pier when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Thomas always drinks too much on weekends.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Someone named Lucas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "I've never touched the backpack.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I never saw the white truck.", "statement_b": "The white truck was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "Someone else must have moved the camera after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I was home all night, not at the bridge.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "I only stayed at the diner for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "I was home all night, not at the pier.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "I only stayed at the pier for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "Someone named Thomas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Someone named Thomas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "The white truck was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "If Lucas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "I lent Ethan some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "The white truck was already scratched when I found it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "It was freezing at the bridge that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I parked right in front of the pier.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "The lights at the bridge were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "I only stayed at the diner for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Who is Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "If Lucas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "I've never spoken to Lucas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "The lights at the diner were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "If Hannah said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "I lent Thomas some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the pier.", "statement_b": "Why would I go to the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I parked right in front of the bridge.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "I've never been to the pier.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "I was home all night, not at the garage.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "You'll have to show me the wallet, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "I was home all night, not at the diner.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "I only stayed at the pier for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "The camera was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "Plenty of people go to the bridge, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Someone named Mia was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "You mentioned Lucas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "I only held the white truck for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Why do you keep asking me about Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never been to the garage.", "statement_b": "The lights at the garage were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "I put the backpack back where it was.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "I've never spoken to Ethan.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "I've heard the diner is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Who is Mia?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never been to the diner.", "statement_b": "I parked right in front of the diner.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Lucas wouldn't do something like that.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Why do you keep asking me about Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Someone named Thomas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "I put the backpack back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "Someone else must have moved the wallet after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "I saw Hannah at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "I lent Hannah some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "You'll have to show me the camera, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I didn't go to the bridge.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "Why would I go to the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "I've never met Hannah in my life.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "I saw Mia at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "Why would I go to the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "I was home all night, not at the bridge.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Ethan and I used to play cards together.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "I don't know anything about the camera.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "Where exactly is the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "Someone else must have moved the wallet after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I was home all night, not at the bridge.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "Why would I go to the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the camera.", "statement_b": "Is the camera even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Mia called me last night.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "I've never touched the backpack.", "label": 0, "kind": "object", "pair_type": "consistent"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "The wallet was heavier than it looked.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "I've heard the bridge is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "I've never spoken to Ethan.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Lucas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "Why would I go to the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I never saw the wallet.", "statement_b": "What's so important about the wallet?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "The lights at the garage were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "What's so important about the backpack?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "Hannah and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "I don't know anyone named Thomas.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "I've never met Hannah in my life.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the garage.", "statement_b": "It was freezing at the garage that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "You mentioned Mia earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "I only stayed at the diner for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "The lights at the diner were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "The back door of the bridge was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the wallet.", "statement_b": "What's so important about the wallet?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "Someone else must have moved the backpack after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "I've never spoken to Hannah.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "There was nobody else at the diner when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "I parked right in front of the garage.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Lucas.", "statement_b": "Why do you keep asking me about Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never touched the camera.", "statement_b": "I only held the backpack for a second.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Hannah called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "I've never met Ethan in my life.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "Is the white truck even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Ethan has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "The lights at the bridge were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Thomas called me last night.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I never saw the wallet.", "statement_b": "Is the wallet even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Someone named Hannah was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "The white truck was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Lucas has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Hannah called me last night.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "I saw Lucas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "You mentioned Lucas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Someone named Hannah was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "If my fingerprints are on the white truck, someone planted them.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "I've heard the pier is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Who is Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "I was home all night, not at the garage.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "Is the backpack even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "Someone else must have moved the backpack after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Someone named Mia was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "The back door of the diner was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I never saw the backpack.", "statement_b": "The backpack was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "I've never heard of Hannah.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "Someone named Ethan was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Who is Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Lucas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "Where exactly is the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "I didn't go to the diner.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "I don't even know where the pier is.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "Where exactly is the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "There was nobody else at the garage when I arrived.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "If Mia said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Lucas in my life.", "statement_b": "Someone named Lucas was in the news, I think.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the diner is.", "statement_b": "I parked right in front of the diner.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the pier is.", "statement_b": "I parked right in front of the pier.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the pier.", "statement_b": "It was freezing at the pier that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "I saw Mia at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "I only held the backpack for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "I've never spoken to Thomas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "I only stayed at the bridge for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the garage.", "statement_b": "The back door of the garage was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Ethan.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "You mentioned Thomas earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the garage is.", "statement_b": "I only stayed at the garage for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "I've never met Thomas in my life.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "I've never spoken to Lucas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "Plenty of people go to the bridge, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I never saw the white truck.", "statement_b": "The white truck was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Why do you keep asking me about Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "Who is Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Who is Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "The back door of the diner was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "I put the camera back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "The wallet was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "Ethan and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "Plenty of people go to the garage, it doesn't mean anything.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "The camera? I have no idea what you're talking about.", "statement_b": "Is the camera even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Ethan wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "Mia always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Mia in my life.", "statement_b": "Mia lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "Why would I go to the bridge?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "I parked right in front of the bridge.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "You mentioned Hannah earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "I've never met Mia in my life.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "You'll have to show me the white truck, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Mia called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "I've never been to the bridge.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I never saw the backpack.", "statement_b": "I put the backpack back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "Why would I go to the diner?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Lucas.", "statement_b": "Who is Lucas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "Someone else must have moved the wallet after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the diner.", "statement_b": "It was freezing at the pier that night.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "I lent Ethan some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "I've never heard of Thomas.", "label": 0, "kind": "person", "pair_type": "consistent"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "I only stayed at the bridge for ten minutes.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I don't know anything about the camera.", "statement_b": "The camera was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "I parked right in front of the bridge.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "I lent Hannah some money last year.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "I've never been to the garage.", "statement_b": "I parked right in front of the garage.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "I parked right in front of the diner.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I never saw the wallet.", "statement_b": "I only held the wallet for a second.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never met Hannah in my life.", "statement_b": "Why do you keep asking me about Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "Where exactly is the garage?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Hannah, means nothing to me.", "statement_b": "Hannah always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "It was freezing at the bridge that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "It was freezing at the garage that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "I lent Mia some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't even know where the bridge is.", "statement_b": "There was nobody else at the bridge when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "The lights at the diner were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "If Thomas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "You mentioned Hannah earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Lucas is.", "statement_b": "If Lucas said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the white truck.", "statement_b": "What's so important about the white truck?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Why do you keep asking me about Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I don't know anything about the backpack.", "statement_b": "Is the backpack even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan wouldn't do something like that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah has a bad temper, everyone knows that.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Hannah always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the garage that night.", "statement_b": "The back door of the garage was unlocked.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "What's so important about the white truck?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "The lights at the bridge were off when I got there.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "Hannah lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "Someone else must have moved the white truck after I left it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "Ethan always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "I've heard the diner is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "The wallet? I have no idea what you're talking about.", "statement_b": "The white truck was already scratched when I found it.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I didn't go to the garage.", "statement_b": "The back door of the bridge was unlocked.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "Ethan and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "There was nobody else at the bridge when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I've never been to the pier.", "statement_b": "I parked right in front of the pier.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the pier.", "statement_b": "It was freezing at the pier that night.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Ethan is.", "statement_b": "I saw Ethan at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the backpack.", "statement_b": "You'll have to show me the backpack, I've never seen it.", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "That name, Thomas, means nothing to me.", "statement_b": "I've never spoken to Thomas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Mia is.", "statement_b": "Hannah and I used to play cards together.", "label": 0, "kind": "person", "pair_type": "other_entity"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "You mentioned Mia earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I never saw the backpack.", "statement_b": "What's so important about the backpack?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I don't know anyone named Thomas.", "statement_b": "Thomas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia always drinks too much on weekends.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Hannah.", "statement_b": "I lent Hannah some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never touched the white truck.", "statement_b": "The white truck was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "I put the backpack back where it was.", "label": 0, "kind": "object", "pair_type": "other_entity"}
+{"statement_a": "I wasn't anywhere near the pier that night.", "statement_b": "Where exactly is the pier?", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "That name, Lucas, means nothing to me.", "statement_b": "Lucas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I never saw the white truck.", "statement_b": "Is the white truck even connected to this case?", "label": 0, "kind": "object", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "I don't even know where the bridge is.", "label": 0, "kind": "place", "pair_type": "consistent"}
+{"statement_a": "I've never met Ethan in my life.", "statement_b": "Who is Ethan?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Hannah is.", "statement_b": "I lent Hannah some money last year.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "Thomas lives far from here.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Why do you keep asking me about Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "That name, Mia, means nothing to me.", "statement_b": "Mia called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never heard of Hannah.", "statement_b": "Why do you keep asking me about Hannah?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Ethan.", "statement_b": "If Ethan said something about me, they're lying.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I have no idea who Thomas is.", "statement_b": "Thomas and I used to play cards together.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "I saw Thomas at the bar on Friday.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I don't know anyone named Mia.", "statement_b": "I've never spoken to Mia.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "The white truck? I have no idea what you're talking about.", "statement_b": "I put the white truck back where it was.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "I've heard the bridge is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "The backpack? I have no idea what you're talking about.", "statement_b": "The backpack was already scratched when I found it.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "That name, Ethan, means nothing to me.", "statement_b": "You mentioned Ethan earlier, but I still don't know them.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Why do you keep asking me about Thomas?", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I've never heard of Thomas.", "statement_b": "I've never spoken to Thomas.", "label": 0, "kind": "person", "pair_type": "safe"}
+{"statement_a": "I wasn't anywhere near the bridge that night.", "statement_b": "I was home all night, not at the bridge.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never met Thomas in my life.", "statement_b": "Thomas called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the diner.", "statement_b": "There was nobody else at the diner when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I didn't go to the bridge.", "statement_b": "It was freezing at the pier that night.", "label": 0, "kind": "place", "pair_type": "other_entity"}
+{"statement_a": "I never saw the backpack.", "statement_b": "The backpack was heavier than it looked.", "label": 1, "kind": "object", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "I've heard the bridge is a rough area.", "label": 0, "kind": "place", "pair_type": "safe"}
+{"statement_a": "I've never heard of Mia.", "statement_b": "Mia called me last night.", "label": 1, "kind": "person", "pair_type": "reveal"}
+{"statement_a": "I've never been to the bridge.", "statement_b": "There was nobody else at the bridge when I arrived.", "label": 1, "kind": "place", "pair_type": "reveal"}
+{"statement_a": "I wasn't anywhere near the diner that night.", "statement_b": "I don't even know where the diner is.", "label": 0, "kind": "place", "pair_type": "consistent"}
