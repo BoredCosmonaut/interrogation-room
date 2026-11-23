@@ -97,7 +97,7 @@ def main():
 
             augmented[kind][role] = sorted(pool)
             print(f"{kind}/{role}: {len(templates)} -> {len(pool)} templates")
-
+    os.makedirs(os.path.dirname(AUGMENTED_PATH), exist_ok=True)
     with open(AUGMENTED_PATH, "w", encoding="utf-8") as f:
         json.dump(augmented, f, indent=2, ensure_ascii=False)
     print(f"\nSaved to {AUGMENTED_PATH}")
