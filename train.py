@@ -57,7 +57,7 @@ def main():
     set_seed(SEED)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     global USE_BF16
-    USE_BF16 = device == "cuda" and torch.cuda.is_bf16_supported()
+    USE_BF16 = False
     print(f"Device: {device}" + (f" ({torch.cuda.get_device_name(0)}, bf16)" if USE_BF16 else ""))
  
     train =load_jsonl("data/data/train.jsonl")
