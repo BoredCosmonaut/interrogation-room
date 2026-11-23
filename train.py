@@ -69,6 +69,8 @@ def main():
     model = AutoModelForSequenceClassification.from_pretrained(
         MODEL_ID, num_labels=2, ignore_mismatched_sizes=True
     ).to(device)
+    torch.nn.init.normal_(model.classifier.weight, std=0.02)
+    torch.nn.init.zeros_(model.classifier.bias)
  
     train_loader = make_loader(train, tokenizer, shuffle=True)
     val_loader = make_loader(val, tokenizer, shuffle=False)
@@ -85,8 +87,12 @@ def main():
             with torch.autocast(device_type=device, dtype=torch.bfloat16, enabled=USE_BF16):
                 loss = model(**batch).loss   # HF computes cross-entropy for us when labels are given
  
+            if torch.isnan(loss):
+                raise RuntimeError(f"Loss became NaN at epoch {epoch}, step {step}")
+
             optimizer.zero_grad()
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
  
             total_loss += loss.item()
