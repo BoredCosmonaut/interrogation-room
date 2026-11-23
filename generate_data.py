@@ -1,14 +1,10 @@
 
+
 import json
 import os
 import random
 
 random.seed(42)
-
-# ---------------------------------------------------------------------------
-# Fillers. Each split gets its OWN names/places/objects, so the test set
-# checks whether the model learned the pattern, not memorized the words.
-# ---------------------------------------------------------------------------
 
 FILLERS = {
     "train": {
@@ -32,12 +28,6 @@ FILLERS = {
     },
 }
 
-# ---------------------------------------------------------------------------
-# Templates, grouped by what the suspect denies.
-#   denials:  "I don't know X"
-#   reveals:  statements that only make sense if you DO know X  -> label 1
-#   safe:     statements that mention X but are still consistent  -> label 0
-# ---------------------------------------------------------------------------
 
 TEMPLATES = {
     "person": {
@@ -114,32 +104,66 @@ TEMPLATES = {
 }
 
 
-def make_pairs(split_name):
+AUGMENTED_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates_augmented.json")
+K_PER_DENIAL = 6
+
+
+def load_templates():
+    if os.path.exists(AUGMENTED_PATH):
+        with open(AUGMENTED_PATH, encoding="utf-8") as f:
+            print(f"Using augmented templates from {AUGMENTED_PATH}")
+            return json.load(f)
+    print("Using built-in templates (run paraphrase.py to augment)")
+    return TEMPLATES
+
+
+def split_templates(templates):
+    rng = random.Random(123)
+    splits = {"train": {}, "val": {}, "test": {}}
+    for kind, roles in templates.items():
+        for s in splits.values():
+            s[kind] = {}
+        for role, items in roles.items():
+            items = items[:]
+            rng.shuffle(items)
+            n = len(items)
+            n_test = max(1, round(0.15 * n))
+            n_val = max(1, round(0.15 * n))
+            splits["test"][kind][role] = items[:n_test]
+            splits["val"][kind][role] = items[n_test:n_test + n_val]
+            splits["train"][kind][role] = items[n_test + n_val:]
+    return splits
+
+
+def pick(items, k):
+    return random.sample(items, min(k, len(items)))
+
+
+def make_pairs(split_name, split_templates_):
     """Build all examples for one split."""
     fillers = FILLERS[split_name]
     examples = []
 
-    for kind, templates in TEMPLATES.items():
+    for kind, templates in split_templates_.items():
         values = fillers[kind]
 
         for x in values:
             for denial in templates["denials"]:
                 a = denial.format(x=x)
 
-
-                for reveal in templates["reveals"]:
+                for reveal in pick(templates["reveals"], K_PER_DENIAL):
                     examples.append(make_example(a, reveal.format(x=x), 1, kind, "reveal"))
 
-
-                for safe in templates["safe"]:
+                for safe in pick(templates["safe"], K_PER_DENIAL):
                     examples.append(make_example(a, safe.format(x=x), 0, kind, "safe"))
 
                 other = random.choice([v for v in values if v != x])
                 reveal = random.choice(templates["reveals"])
                 examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
 
-                other_denial = random.choice([d for d in templates["denials"] if d != denial])
-                examples.append(make_example(a, other_denial.format(x=x), 0, kind, "consistent"))
+                others = [d for d in templates["denials"] if d != denial]
+                if others:
+                    examples.append(make_example(a, random.choice(others).format(x=x), 0, kind, "consistent"))
 
     return examples
 
@@ -151,13 +175,12 @@ def make_example(a, b, label, kind, pair_type):
         "statement_a": a,
         "statement_b": b,
         "label": label,
-        "kind": kind,        
+        "kind": kind,           
         "pair_type": pair_type,  
     }
 
 
 def balance(examples):
-    """Downsample so contradictions and non-contradictions are 50/50."""
     pos = [e for e in examples if e["label"] == 1]
     neg = [e for e in examples if e["label"] == 0]
     n = min(len(pos), len(neg))
@@ -173,14 +196,15 @@ def save_jsonl(examples, path):
 
 
 def main():
-    os.makedirs("data", exist_ok=True)
+    out_dir = os.path.dirname(os.path.abspath(__file__))
+    splits = split_templates(load_templates())
 
     for split in ["train", "val", "test"]:
-        examples = balance(make_pairs(split))
-        save_jsonl(examples, f"data/{split}.jsonl")
+        examples = balance(make_pairs(split, splits[split]))
+        save_jsonl(examples, os.path.join(out_dir, f"{split}.jsonl"))
 
         n_pos = sum(e["label"] for e in examples)
-        print(f"{split:5s}: {len(examples):5d} examples ({n_pos} contradictions)")
+        print(f"{split:5s}: {len(examples):6d} examples ({n_pos} contradictions)")
 
     print("\nSample:")
     for e in random.sample(examples, 5):
