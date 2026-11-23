@@ -1,15 +1,3 @@
-"""
-generate_data.py
-Builds a synthetic dataset of "knowledge contradiction" pairs for the
-Interrogation Room contradiction detector.
-
-Each example is a pair of statements from the same suspect:
-    statement_a: an earlier claim (usually a denial)
-    statement_b: a later claim
-    label:       1 = contradiction, 0 = no contradiction
-
-Output: data/train.jsonl, data/val.jsonl, data/test.jsonl
-"""
 
 import json
 import os
@@ -138,21 +126,18 @@ def make_pairs(split_name):
             for denial in templates["denials"]:
                 a = denial.format(x=x)
 
-                # 1) Denial vs reveal about the SAME thing -> contradiction
+
                 for reveal in templates["reveals"]:
                     examples.append(make_example(a, reveal.format(x=x), 1, kind, "reveal"))
 
-                # 2) Denial vs safe statement about the same thing -> no contradiction
+
                 for safe in templates["safe"]:
                     examples.append(make_example(a, safe.format(x=x), 0, kind, "safe"))
 
-                # 3) Denial vs reveal about a DIFFERENT thing -> no contradiction.
-                #    Stops the model from learning "reveal sentence = contradiction".
                 other = random.choice([v for v in values if v != x])
                 reveal = random.choice(templates["reveals"])
                 examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
 
-                # 4) Denial vs another denial of the same thing -> no contradiction
                 other_denial = random.choice([d for d in templates["denials"] if d != denial])
                 examples.append(make_example(a, other_denial.format(x=x), 0, kind, "consistent"))
 
@@ -160,15 +145,14 @@ def make_pairs(split_name):
 
 
 def make_example(a, b, label, kind, pair_type):
-    # Capitalize the first letter (object templates start with "the ...")
     a = a[0].upper() + a[1:]
     b = b[0].upper() + b[1:]
     return {
         "statement_a": a,
         "statement_b": b,
         "label": label,
-        "kind": kind,            # person / place / object
-        "pair_type": pair_type,  # reveal / safe / other_entity / consistent
+        "kind": kind,        
+        "pair_type": pair_type,  
     }
 
 
