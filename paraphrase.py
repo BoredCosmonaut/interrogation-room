@@ -1,4 +1,3 @@
-
 import json
 import os
 import re
@@ -8,12 +7,12 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"))
-from generate_data import TEMPLATES, AUGMENTED_PATH  
+from generate_data import TEMPLATES, AUGMENTED_PATH
 
-MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"   
+MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"
 N_PER_TEMPLATE = 15
 
-THING = {"person": "a person", "place": "a place", "object": "an object"}
+THING = {"person": "a person", "place": "a place", "object": "an object", "alibi": "a place"}
 
 ROLE_INSTRUCTIONS = {
     "denials": (
@@ -33,6 +32,26 @@ ROLE_INSTRUCTIONS = {
     ),
 }
 
+KIND_INSTRUCTIONS = {
+    "alibi": {
+        "denials": (
+            "The suspect gives an ALIBI: they claim they were at a place called {{x}} the whole night "
+            "and never left. Vary the wording, tone and length."
+        ),
+        "reveals": (
+            "The suspect earlier claimed they were at {{x}} the whole night. Now they accidentally reveal "
+            "they were NOT there the whole time: they arrived late, stepped out, came back later, or were "
+            "seen elsewhere. They must not openly admit lying, it should sound like a slip. "
+            "Invent NEW, DIFFERENT details each time."
+        ),
+        "safe": (
+            "The suspect earlier claimed they were at {{x}} the whole night. Now they say something about "
+            "their night at {{x}} that is fully CONSISTENT with never leaving: what they did there, what it "
+            "was like, what they noticed. Nothing should imply they left or arrived late."
+        ),
+    },
+}
+
 PROMPT = """You are writing dialogue lines for a detective game. A suspect is being interrogated.
 
 {instruction}
@@ -48,14 +67,14 @@ Write {n} new lines like this. Rules:
 
 def clean(line):
     line = line.strip().strip('"').strip()
-    line = re.sub(r"^\s*(\d+[\.\)]|[-*•])\s*", "", line)  
+    line = re.sub(r"^\s*(\d+[\.\)]|[-*•])\s*", "", line)
     return line.strip().strip('"').strip()
 
 
 def is_valid(line):
     if line.count("{x}") != 1:
         return False
-    if re.search(r"[{}]", line.replace("{x}", "")):  
+    if re.search(r"[{}]", line.replace("{x}", "")):
         return False
     return 4 <= len(line.split()) <= 25
 
@@ -81,11 +100,20 @@ def main():
     model.eval()
 
     augmented = {}
+    if os.path.exists(AUGMENTED_PATH):
+        with open(AUGMENTED_PATH, encoding="utf-8") as f:
+            augmented = json.load(f)
+        print(f"Found existing {AUGMENTED_PATH} with: {', '.join(augmented)}")
+
     for kind, roles in TEMPLATES.items():
+        if kind in augmented:
+            print(f"Skipping {kind} (already augmented)")
+            continue
         augmented[kind] = {}
         for role, templates in roles.items():
-            pool = set(templates)  
-            instruction = ROLE_INSTRUCTIONS[role].format(thing=THING[kind])
+            pool = set(templates)
+            role_text = KIND_INSTRUCTIONS.get(kind, ROLE_INSTRUCTIONS)[role]
+            instruction = role_text.format(thing=THING[kind])
 
             for i, example in enumerate(templates, 1):
                 prompt = PROMPT.format(instruction=instruction, example=example, n=N_PER_TEMPLATE)
@@ -97,6 +125,7 @@ def main():
 
             augmented[kind][role] = sorted(pool)
             print(f"{kind}/{role}: {len(templates)} -> {len(pool)} templates")
+
     os.makedirs(os.path.dirname(AUGMENTED_PATH), exist_ok=True)
     with open(AUGMENTED_PATH, "w", encoding="utf-8") as f:
         json.dump(augmented, f, indent=2, ensure_ascii=False)

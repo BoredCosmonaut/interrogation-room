@@ -1,4 +1,3 @@
-
 import json
 import os
 import random
@@ -15,18 +14,23 @@ FILLERS = {
                   "the back alley", "the harbor", "the motel"],
         "object": ["the red van", "the briefcase", "the black jacket", "the phone",
                    "the toolbox", "the envelope", "the keys", "the laptop"],
+        "alibi": ["my post", "the guard booth", "my apartment", "the office",
+                  "my parents' house", "the front gate", "the control room", "my cousin's place"],
     },
     "val": {
         "person": ["Thomas", "Hannah", "Lucas", "Mia", "Ethan"],
         "place": ["the pier", "the garage", "the diner", "the bridge"],
         "object": ["the backpack", "the white truck", "the wallet", "the camera"],
+        "alibi": ["the security desk", "my flat", "the night shop"],
     },
     "test": {
         "person": ["Victor", "Julia", "Oscar", "Nora", "Felix"],
         "place": ["the casino", "the rooftop", "the storage unit", "the bus depot"],
         "object": ["the suitcase", "the green sedan", "the receipt", "the radio"],
+        "alibi": ["the watchtower", "my brother's house", "the reception desk"],
     },
 }
+
 
 TEMPLATES = {
     "person": {
@@ -100,8 +104,34 @@ TEMPLATES = {
             "Is {x} even connected to this case?",
         ],
     },
+    "alibi": {
+        "denials": [
+            "I was at {x} the whole night.",
+            "I never left {x} until morning.",
+            "I was at {x} from ten until six.",
+            "Ask anyone, I stayed at {x} all night.",
+            "I didn't go anywhere, I was at {x}.",
+        ],
+        "reveals": [
+            "I stepped out of {x} for a while around one.",
+            "I got back to {x} a little after two.",
+            "When I left {x} the streets were empty.",
+            "I wasn't at {x} the whole time, I went to get food.",
+            "Someone else covered for me at {x} for an hour.",
+            "I only got to {x} around midnight.",
+            "By the time I returned to {x} it had started raining.",
+        ],
+        "safe": [
+            "The night at {x} was quiet, nothing happened.",
+            "It gets cold at {x} after midnight.",
+            "I watched a movie on my phone at {x}.",
+            "Nobody came by {x} all night.",
+            "I made tea at {x} around three.",
+            "I was bored out of my mind at {x}.",
+            "The lights at {x} flickered a couple of times.",
+        ],
+    },
 }
-
 
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
@@ -114,8 +144,13 @@ K_PER_DENIAL = 6
 def load_templates():
     if os.path.exists(AUGMENTED_PATH):
         with open(AUGMENTED_PATH, encoding="utf-8") as f:
-            print(f"Using augmented templates from {AUGMENTED_PATH}")
-            return json.load(f)
+            augmented = json.load(f)
+        print(f"Using augmented templates from {AUGMENTED_PATH}")
+        for kind in TEMPLATES:
+            if kind not in augmented:
+                print(f"  ({kind} not augmented yet, using built-in templates)")
+                augmented[kind] = TEMPLATES[kind]
+        return augmented
     print("Using built-in templates (run paraphrase.py to augment)")
     return TEMPLATES
 
@@ -143,7 +178,6 @@ def pick(items, k):
 
 
 def make_pairs(split_name, split_templates_):
-    """Build all examples for one split."""
     fillers = FILLERS[split_name]
     examples = []
 
@@ -154,17 +188,23 @@ def make_pairs(split_name, split_templates_):
             for denial in templates["denials"]:
                 a = denial.format(x=x)
 
-
                 for reveal in pick(templates["reveals"], K_PER_DENIAL):
                     examples.append(make_example(a, reveal.format(x=x), 1, kind, "reveal"))
-
 
                 for safe in pick(templates["safe"], K_PER_DENIAL):
                     examples.append(make_example(a, safe.format(x=x), 0, kind, "safe"))
 
-                other = random.choice([v for v in values if v != x])
-                reveal = random.choice(templates["reveals"])
-                examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
+                if kind != "alibi":
+                    other = random.choice([v for v in values if v != x])
+                    reveal = random.choice(templates["reveals"])
+                    examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
+
+                other_kinds = [k for k in split_templates_
+                               if k != kind and {k, kind} != {"alibi", "place"}]
+                ok = random.choice(other_kinds)
+                role = random.choice(["reveals", "safe"])
+                line = random.choice(split_templates_[ok][role])
+                examples.append(make_example(a, line.format(x=random.choice(fillers[ok])), 0, kind, "unrelated"))
 
                 others = [d for d in templates["denials"] if d != denial]
                 if others:
@@ -180,13 +220,12 @@ def make_example(a, b, label, kind, pair_type):
         "statement_a": a,
         "statement_b": b,
         "label": label,
-        "kind": kind,      
-        "pair_type": pair_type,  
+        "kind": kind,
+        "pair_type": pair_type,
     }
 
 
 def balance(examples):
-    """Downsample so contradictions and non-contradictions are 50/50."""
     pos = [e for e in examples if e["label"] == 1]
     neg = [e for e in examples if e["label"] == 0]
     n = min(len(pos), len(neg))
