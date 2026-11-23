@@ -60,9 +60,9 @@ def main():
     USE_BF16 = False
     print(f"Device: {device}" + (f" ({torch.cuda.get_device_name(0)}, bf16)" if USE_BF16 else ""))
  
-    train =load_jsonl("data/data/train.jsonl")
-    val = load_jsonl("data//data/val.jsonl")
-    test = load_jsonl("data/data/test.jsonl")
+    train = load_jsonl("data/train.jsonl")
+    val = load_jsonl("data/val.jsonl")
+    test = load_jsonl("data/test.jsonl")
     print(f"train={len(train)}  val={len(val)}  test={len(test)}")
  
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)

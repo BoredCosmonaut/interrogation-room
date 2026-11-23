@@ -1,10 +1,10 @@
 
-
 import json
 import os
 import random
 
 random.seed(42)
+
 
 FILLERS = {
     "train": {
@@ -27,7 +27,6 @@ FILLERS = {
         "object": ["the suitcase", "the green sedan", "the receipt", "the radio"],
     },
 }
-
 
 TEMPLATES = {
     "person": {
@@ -104,7 +103,11 @@ TEMPLATES = {
 }
 
 
-AUGMENTED_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates_augmented.json")
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = _HERE if os.path.basename(_HERE) == "data" else os.path.join(_HERE, "data")
+AUGMENTED_PATH = os.path.join(DATA_DIR, "templates_augmented.json")
+
 K_PER_DENIAL = 6
 
 
@@ -151,8 +154,10 @@ def make_pairs(split_name, split_templates_):
             for denial in templates["denials"]:
                 a = denial.format(x=x)
 
+
                 for reveal in pick(templates["reveals"], K_PER_DENIAL):
                     examples.append(make_example(a, reveal.format(x=x), 1, kind, "reveal"))
+
 
                 for safe in pick(templates["safe"], K_PER_DENIAL):
                     examples.append(make_example(a, safe.format(x=x), 0, kind, "safe"))
@@ -175,12 +180,13 @@ def make_example(a, b, label, kind, pair_type):
         "statement_a": a,
         "statement_b": b,
         "label": label,
-        "kind": kind,           
+        "kind": kind,      
         "pair_type": pair_type,  
     }
 
 
 def balance(examples):
+    """Downsample so contradictions and non-contradictions are 50/50."""
     pos = [e for e in examples if e["label"] == 1]
     neg = [e for e in examples if e["label"] == 0]
     n = min(len(pos), len(neg))
@@ -196,7 +202,8 @@ def save_jsonl(examples, path):
 
 
 def main():
-    out_dir = os.path.dirname(os.path.abspath(__file__))
+    out_dir = DATA_DIR
+    os.makedirs(out_dir, exist_ok=True)
     splits = split_templates(load_templates())
 
     for split in ["train", "val", "test"]:
