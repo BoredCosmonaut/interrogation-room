@@ -3,9 +3,8 @@ import os
 import shutil
 
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
-MODEL_ID = "Qwen/Qwen2.5-32B-Instruct"
 BATCH_SIZE = 16
 
 DATA_DIR = "data"
@@ -38,10 +37,27 @@ Answer NO if B is a question, hearsay ("I heard", "someone told me"), a guess ab
 Answer with one word: YES or NO."""
 
 
+def pick_setup():
+    gb = torch.cuda.get_device_properties(0).total_memory / 1e9
+    name = torch.cuda.get_device_name(0)
+    if gb >= 70:
+        return "Qwen/Qwen2.5-32B-Instruct", False, 16, f"{name} ({gb:.0f} GB): 32B in bf16"
+    if gb >= 22:
+        return "Qwen/Qwen2.5-32B-Instruct", True, 4, f"{name} ({gb:.0f} GB): 32B in 4-bit"
+    return "Qwen/Qwen2.5-14B-Instruct", True, 4, f"{name} ({gb:.0f} GB): 14B in 4-bit"
+
+
 def load_model():
-    print(f"Loading {MODEL_ID} ...")
-    tok = AutoTokenizer.from_pretrained(MODEL_ID, padding_side="left")
-    model = AutoModelForCausalLM.from_pretrained(MODEL_ID, torch_dtype=torch.bfloat16, device_map="auto")
+    global BATCH_SIZE
+    model_id, four_bit, BATCH_SIZE, desc = pick_setup()
+    print(f"Judge: {desc}")
+    tok = AutoTokenizer.from_pretrained(model_id, padding_side="left")
+    if four_bit:
+        quant = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                                   bnb_4bit_compute_dtype=torch.bfloat16)
+        model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=quant, device_map="auto")
+    else:
+        model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map="auto")
     model.eval()
     yes_id = tok.encode("YES", add_special_tokens=False)[0]
     no_id = tok.encode("NO", add_special_tokens=False)[0]
@@ -128,7 +144,7 @@ def main():
     tok, model, yes_id, no_id = load_model()
     verify_templates(tok, model, yes_id, no_id)
     verify_pairs(tok, model, yes_id, no_id)
-    print("\nDone. Originals are kept as *.raw.* files; run this again any time, it always starts from them.")
+    print("\nDone. Originals are kept run this again any time, it always starts from them.")
 
 
 if __name__ == "__main__":
