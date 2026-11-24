@@ -173,6 +173,24 @@ def split_templates(templates):
     return splits
 
 
+LLM_PAIRS_PATH = os.path.join(DATA_DIR, "llm_pairs.jsonl")
+
+
+def load_llm_pairs():
+    splits = {"train": [], "val": [], "test": []}
+    if not os.path.exists(LLM_PAIRS_PATH):
+        return splits
+    with open(LLM_PAIRS_PATH, encoding="utf-8") as f:
+        rows = [json.loads(l) for l in f if l.strip()]
+    for r in rows:
+        bucket = random.Random(r["scenario"]).random()
+        split = "train" if bucket < 0.8 else "val" if bucket < 0.9 else "test"
+        label = 1 if r["label"] == "lie" else 0
+        splits[split].append(make_example(r["a"], r["b"], label, "llm", f"llm_{r['label']}"))
+    print(f"Using {len(rows)} LLM pairs from {LLM_PAIRS_PATH}")
+    return splits
+
+
 def pick(items, k):
     return random.sample(items, min(k, len(items)))
 
@@ -244,9 +262,11 @@ def main():
     out_dir = DATA_DIR
     os.makedirs(out_dir, exist_ok=True)
     splits = split_templates(load_templates())
+    llm = load_llm_pairs()
 
     for split in ["train", "val", "test"]:
-        examples = balance(make_pairs(split, splits[split]))
+        examples = balance(make_pairs(split, splits[split])) + balance(llm[split])
+        random.shuffle(examples)
         save_jsonl(examples, os.path.join(out_dir, f"{split}.jsonl"))
 
         n_pos = sum(e["label"] for e in examples)
