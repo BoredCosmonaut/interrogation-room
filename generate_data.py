@@ -200,6 +200,9 @@ def make_pairs(split_name, split_templates_):
     examples = []
 
     for kind, templates in split_templates_.items():
+        if not all(templates[r] for r in ("denials", "reveals", "safe")):
+            print(f"  warning: {split_name}/{kind} has an empty template list, skipping it")
+            continue
         values = fillers[kind]
 
         for x in values:
@@ -217,12 +220,13 @@ def make_pairs(split_name, split_templates_):
                     reveal = random.choice(templates["reveals"])
                     examples.append(make_example(a, reveal.format(x=other), 0, kind, "other_entity"))
 
-                other_kinds = [k for k in split_templates_
-                               if k != kind and {k, kind} != {"alibi", "place"}]
-                ok = random.choice(other_kinds)
                 role = random.choice(["reveals", "safe"])
-                line = random.choice(split_templates_[ok][role])
-                examples.append(make_example(a, line.format(x=random.choice(fillers[ok])), 0, kind, "unrelated"))
+                other_kinds = [k for k in split_templates_
+                               if k != kind and {k, kind} != {"alibi", "place"} and split_templates_[k][role]]
+                if other_kinds:
+                    ok = random.choice(other_kinds)
+                    line = random.choice(split_templates_[ok][role])
+                    examples.append(make_example(a, line.format(x=random.choice(fillers[ok])), 0, kind, "unrelated"))
 
                 others = [d for d in templates["denials"] if d != denial]
                 if others:
