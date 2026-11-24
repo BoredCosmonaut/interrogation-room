@@ -8,7 +8,7 @@ from baseline import load_jsonl,report
 MODEL_ID = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
 SAVE_DIR = "checkpoints/detector"
 
-EPOCHS = 3
+EPOCHS = 2
 BATCH_SIZE = 16
 LEARNING_RATE = 2e-5
 MAX_LENGTH = 128
