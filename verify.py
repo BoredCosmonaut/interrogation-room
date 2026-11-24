@@ -120,6 +120,16 @@ def verify_templates(tok, model, yes_id, no_id):
     with open(TEMPLATES_RAW, encoding="utf-8") as f:
         templates = json.load(f)
 
+    with open(TEMPLATES_PATH, encoding="utf-8") as f:
+        current = json.load(f)
+    new_kinds = [k for k in current if k not in templates]
+    if new_kinds:
+        for k in new_kinds:
+            templates[k] = current[k]
+        with open(TEMPLATES_RAW, "w", encoding="utf-8") as f:
+            json.dump(templates, f, indent=2, ensure_ascii=False)
+        print(f"Added new kinds to {TEMPLATES_RAW}: {', '.join(new_kinds)}")
+
     for kind, roles in templates.items():
         if kind not in CANONICAL:
             continue
@@ -144,7 +154,7 @@ def main():
     tok, model, yes_id, no_id = load_model()
     verify_templates(tok, model, yes_id, no_id)
     verify_pairs(tok, model, yes_id, no_id)
-    print("\nDone. Originals are kept run this again any time, it always starts from them.")
+    print("\nDone. Originals are kept as *.raw.* files; run this again any time, it always starts from them.")
 
 
 if __name__ == "__main__":
