@@ -4,3 +4,5 @@ __pycache__/
 *.pt
 *.safetensors
 checkpoints/
+!data/llm_pairs.jsonl
+!data/llm_pairs.raw.jsonl
